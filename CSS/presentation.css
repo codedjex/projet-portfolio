@@ -1,0 +1,11 @@
+.contener-presentation {
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fond1 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
