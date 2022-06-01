@@ -6,7 +6,7 @@
 }
 
 header {
-    background-image: url(/picture/TECHNOLOGY\ DESKTOP\ WALLPAPER.png);
+    background-image: url(../picture/TECHNOLOGY\ DESKTOP\ WALLPAPER.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -15,16 +15,19 @@ header {
     overflow: hidden;
     box-sizing: content-box;
 }
-header img{
+
+header img {
     box-sizing: content-box;
     position: absolute;
     width: 98vw;
-   height: 95vh;
+    height: 95vh;
     object-fit: cover;
     animation: tourne2 6s infinite;
     opacity: 0.4;
-     margin: 2vh 0vw; 
+    margin: 2vh 0vw;
+    filter: blur(4px);
 }
+
 @keyframes tourne1 {
     0% {
         transform: rotate(0deg);
@@ -33,7 +36,8 @@ header img{
     33% {
         transform: rotate(-2.5deg);
     }
-    66%{
+
+    66% {
         transform: rotate(2.5deg);
     }
 
@@ -70,11 +74,13 @@ li {
     padding: 0 1.7vw;
     font-family: 'Amatic';
 }
+
 .souligne {
     position: relative;
 
-  }
-  .souligne::after {
+}
+
+.souligne::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -85,10 +91,11 @@ li {
     height: 2px;
     background-color: #FF9CB6;
     transition: transform 750ms;
-  }
-  .souligne:hover::after {
+}
+
+.souligne:hover::after {
     transform: translateX(-50%) scaleX(0.8);
-  }
+}
 
 .menu {
     margin-left: 50%;
@@ -136,9 +143,11 @@ li {
     33% {
         transform: rotate(-2deg);
     }
-    66%{
+
+    66% {
         transform: rotate(2deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
@@ -167,7 +176,7 @@ li {
 .nom,
 .prenom {
     position: relative;
-    -webkit-text-stroke: 2.1px #fdb4c7;
+    -webkit-text-stroke: 3px #fdb4c7;
     font-size: calc(7vw + 20px);
     color: #13252c00;
     text-transform: uppercase;
@@ -185,7 +194,8 @@ li {
 .prenom {
     top: 0px;
 }
-header .texte{
+
+header .texte {
     position: absolute;
     width: 50%;
     text-align: center;
@@ -197,10 +207,11 @@ header .texte{
 }
 
 @media screen and (max-width:1056px) {
-    
-.cadre1{
-    top: 70px;
-}
+
+    .cadre1 {
+        top: 70px;
+    }
+
     .menu {
         margin-left: 40%;
     }
@@ -228,35 +239,67 @@ header .texte{
     }
 
 }
-.bulle{
+
+#bulle {
     transition: .7s ease-in-out;
-    width:94px;
+    width: 30px;
     height: auto;
     border-radius: 20px;
     position: sticky;
     z-index: 3;
-    bottom:40px;
+    bottom: 40px;
     left: 10px;
 
 }
-.fa-solid{
+
+.fa-solid {
     position: absolute;
     cursor: pointer;
-    color: white;  
+    color: rgb(255, 255, 255);
     font-size: 30px;
-    margin-left: 5px;
-    transition: .7s ease-in-out; 
-    border-radius: 20px;
-}
-.fa-solid:hover{
-    transform: scale(1.5);
-}
-/* .fa-circle-xmark{
-    opacity: 0;
+    transition: .7s ease-in-out;
 }
 
-.fa-circle-xmark_open{
-   opacity: 1;
-   transform: rotate(1080deg);
-    transition-duration: 0.7s;
-} */
+.fa-solid:hover {
+    transform: scale(1.5);
+}
+
+#dialog {
+    position: absolute;
+    bottom: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(600px, 100%);
+    height: auto;
+    border: 2px solid;
+    background-color: #ffffff;
+    z-index: 4;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#bclose {
+    text-transform: uppercase;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+.champ{
+    display: inline-block;
+    margin-bottom: 10px;
+    font-family: 'Amatic'; 
+    font-size: 1.1em; 
+    color: black; 
+    font-weight: 500;
+}
+#grid input{
+    border-bottom: 1px solid;
+    margin: 7px 5px 0 10px;
+}
+.part3{
+    display: block;
+}
+#bouton{
+    display: block;
+    border: 2px solid;
+    padding: 5px;
+}
