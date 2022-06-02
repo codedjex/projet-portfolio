@@ -2,10 +2,57 @@
     background: black;
     height: 100%;
     overflow: hidden;
+    box-sizing: content-box;
 }
 
 .fond1 {
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+.presentation {
+    position: absolute;
+    bottom: 0px;
+    top: 1100px;
+    width: 85%;
+    height: 55vh;
+    margin-left: 7%;
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    box-sizing: content-box;
+    border: 0.2px solid rgba(255, 255, 255, 0.404);
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 235, 205, 0.13);
+    box-shadow: 1px 1px 5px 3.25px rgb(255, 68, 193);
+}
+
+.presentation img {
+    width: 100%;
+    max-width: 450px;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.presentation p {
+    padding-top: 1%;
+    width: 50%;
+    color: beige;
+    font-size: calc(1vw + 10px);
+    text-align: justify;
+    
+}
+.fa{
+    position: absolute;
+    top:70%;
+    left: 45%;
+}
+.fa-brands{
+    font-size: 75px;
+    color: beige;
+    margin-right: 10px;
+
 }
