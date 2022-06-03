@@ -99,10 +99,24 @@ li {
 
 #menu {
     margin-left: 50%;
-    width: 30px;
-    height: 30px;
-    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    /* border: 2px solid rgb(65, 59, 59);
+    background-color: #FF9CB6; */
+    border-radius: 50%;
     cursor: pointer;
+    /* animation: pulse 0.75s infinite; */
+}
+.bouton{
+    width: 40px;
+    animation: pulse 1.5s infinite;
+
+}
+@keyframes pulse {
+    to{
+        filter:drop-shadow(0 0 8px white);
+    }
+    
 }
 
 .contener-central {

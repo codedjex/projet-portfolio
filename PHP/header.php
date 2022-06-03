@@ -4,9 +4,10 @@
         <ul class="lien-titre">
             <li class="souligne">Projets</li>
             <li class="souligne">A Propos</li>
-            <li class="souligne">Compétences</li>
+            <li class="souligne">Ce bouton ne sert à rien</li>
         </ul>
         <div id="menu" onclick="toggle()">
+        <img  class="bouton" src="/picture/parmetre.png"/>
     </div>
     </div>
     <?php

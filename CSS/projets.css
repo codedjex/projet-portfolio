@@ -15,6 +15,7 @@
     justify-content: space-around;
     background: radial-gradient(circle, #8d1c657c 4%,rgba(0, 0, 0, 0.521) 56%);
     box-shadow: 0 0 16px purple;
+    
 }
 
 .cercle{
@@ -48,6 +49,7 @@
       height: 50vh;
       border: 2px solid blue;
       transition: 4s cubic-bezier(0.035, 0.82, 0.165, 1);
+      object-fit: cover;
   }
   .ailleurs, .note{
       margin-top: 9vh;
@@ -57,5 +59,8 @@
   }
   .cercle:active{
       transform: rotate(360deg);
+  }
+  .photo{
+   
   }
 
