@@ -1,0 +1,225 @@
+@import "ressource.css";
+
+.competence {
+    position: absolute;
+
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(-100vw);
+    z-index: 5;
+    transition: transform 2s;
+    display: grid;
+
+    overflow: hidden;
+
+    background-color: rgba(0, 0, 0, 0.301);
+
+
+}
+.lune {
+    position: absolute;
+    width: 60%;
+    height: 120%;
+    z-index: 5;
+    left: 75%;
+    animation: rotation 100s infinite;
+    opacity: 0.85;
+    z-index: 0;
+}
+@keyframes rotation{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.contener-tx {
+    position: absolute;
+    left: 87%;
+    margin-top: 5vh;
+    width: auto;
+    height: 95vh;
+    color: white;
+
+}
+.contener-tx h1{
+    writing-mode: vertical-lr; 
+    text-orientation:upright;
+    font-size: calc(2vw + 10px);
+    font-weight: 800;
+    font-family: 'Avant';
+    text-decoration: overline underline;
+    color: white;
+    
+}
+
+.competence_open {
+    transform: translateX(-0vw);
+}
+
+.contener-cp {
+    display: grid;
+
+    width: 80%;
+    height: 80vh;
+    margin: 5vh 0 0 5%;
+
+    overflow: hidden;
+
+   opacity: 0.7;
+}
+@media screen  and (max-width:571px) {
+    .contener-tx{
+        width: 100%;
+        height: auto;
+        left: 0%;
+        margin-top: 3vh;
+        text-align: center;
+    }
+    .contener-tx h1{
+        writing-mode: horizontal-tb;
+        width: 100%;
+        height: auto;
+        padding-left: 2%;
+
+    }
+    .contener-cp{
+        margin-top: 10vh;
+        width: 100vw;
+
+    }
+}
+
+.comp {
+    height: 5vh;
+    width: 0%;
+
+    box-shadow: 5px 5px 15px rgb(255, 103, 209);
+
+    font-family: 'Avant';
+    font-size: calc(1vw + 17px);
+    color: white;
+
+    animation: 3s houle infinite;
+    background: linear-gradient(86deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 55%, rgba(0, 212, 255, 1) 100%);
+}
+
+.cp1 {
+    height: 5vh;
+    width: 70%;
+    border: 2px solid;
+    transform: translateX(-100%);
+    transition: transform 4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 2s;
+    
+
+}
+
+.cp1_open {
+    transform: translateX(0%);
+}
+
+.cp2 {
+    height: 5vh;
+    width: 60%;
+    border: 2px solid;
+    transform: translateX(-100%);
+    transition: transform 5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition-delay: 2.5s;
+   
+
+}
+
+.cp2_open {
+    transform: translateX(0%);
+}
+
+.cp3 {
+    height: 5vh;
+    width: 40%;
+    border: 2px solid;
+    transform: translateX(-100%);
+    transition: transform 5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-delay: 3s;
+    font-size: 25px;
+
+}
+
+.cp3_open {
+    transform: translateX(0%);
+}
+
+.cp4 {
+    height: 5vh;
+    width: 70%;
+    border: 2px solid;
+    transform: translateX(-100%);
+    transition: transform 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 3.5s;
+    font-size: 25px;
+
+}
+
+.cp4_open {
+    transform: translateX(0%);
+}
+
+.cp5 {
+    height: 5vh;
+    width: 40%;
+    border: 2px solid;
+    transform: translateX(-100%);
+    transition: transform 2s cubic-bezier(0.23, 1, 0.320, 1);
+    transition-delay: 4s;
+    font-size: 25px;
+
+}
+
+.cp5_open {
+    transform: translateX(0%);
+}
+
+.cp6 {
+    height: 5vh;
+    width: 45%;
+    border: 2px solid;
+    transform: translateX(-100%);
+    transition: transform 3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition-delay: 4.5s;
+    font-size: 25px;
+
+}
+
+.cp6_open {
+    transform: translateX(0%);
+}
+
+.cp7 {
+    height: 5vh;
+    width: 35%;
+    border: 2px solid;
+    transform: translateX(-100%);
+    transition: transform 4.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition-delay: 5s;
+    
+
+}
+
+.cp7_open {
+    transform: translateX(0%);
+}
+
+.cp8 {
+    height: 5vh;
+    width: 50%;
+    border: 2px solid;
+    transform: translateX(-100%);
+    transition: transform 5s cubic-bezier(0.23, 1, 0.320, 1);
+    transition-delay: 5.5s;
+    font-size: 25px;
+
+}
+
+.cp8_open {
+    transform: translateX(0%);
+}

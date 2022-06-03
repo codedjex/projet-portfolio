@@ -1,14 +1,17 @@
 <header>
-    <img src="../picture/TECHNOLOGY DESKTOP WALLPAPER.png"/>
+    <img class="fondhead" src="../picture/TECHNOLOGY DESKTOP WALLPAPER.png"/>
     <div class="contener-titre">
         <ul class="lien-titre">
             <li class="souligne">Projets</li>
             <li class="souligne">A Propos</li>
             <li class="souligne">Compétences</li>
         </ul>
-        <div class="menu"></div>
+        <div id="menu" onclick="toggle()">
     </div>
-    
+    </div>
+    <?php
+    @include 'PHP/competence.php';
+    ?>
     <div class="message"></div>
     <div class="contener-central">
             <div class="contener-nom">
