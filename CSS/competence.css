@@ -19,18 +19,21 @@
 }
 .lune {
     position: absolute;
-    width: 60%;
-    height: 120%;
+    width: 900px;
+    height: 900px;
     z-index: 5;
-    left: 75%;
+    left: 40vw;
     animation: rotation 100s infinite;
     opacity: 0.85;
     z-index: 0;
 }
 @keyframes rotation{
     to{
-        transform: rotate(360deg);
+        transform: rotate(360deg); 
     }
+}
+@media screen and () {
+    
 }
 
 .contener-tx {

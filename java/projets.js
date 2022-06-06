@@ -7,11 +7,18 @@ document.onmousemove = function () {
 
 
     for (let i = 0; i < 2; i++) {
-        boussole[i].style.left = x;
-        boussole[i].style.top = y;
-        boussole[i].style.transform = "translate(-" + x + ",-" + y + ")";
+        boussole[i].style.left = -x;
+        boussole[i].style.top = - y;
+        boussole[i].style.transform = "translate(+" + x + ",+" + y + ")";
     }
 
-    console.log("x =" + x);
-    console.log("y = " + y);
+    console.log("x =" - x);
+    console.log("y = " - y);
+}
+function changeImage(){
+	this.setAttribute("src","picture/Jadoo.png");
+}
+function RemetImage(){
+    this.setAttribute("src","");
+
 }

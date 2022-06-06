@@ -31,3 +31,16 @@ body{
     font-family: 'Avant';
     src: url("../font/a_avantetitulinline_[fr.allfont.net].ttf");
 }
+@font-face {
+    font-family: 'poppins';
+    src: url("/font/poppins-regular.woff"),
+    url("/font/poppins-regular.woff2");
+}
+@font-face {
+    font-family: 'ingrid';
+    src: url("/font/IngridDarling-Regular.ttf");
+}
+@font-face {
+    font-family: 'great';
+    src: url("/font/GreatVibes-Regular.ttf");
+}

@@ -1,66 +1,92 @@
-.contener-projet{
+#contener-projet{
     width: 99vw;
     height: 100vh;
    background-image: url('/picture/fond2.png');
     box-shadow: 0px 0px 19px 9px #000000;
+    padding: 2.5vh 2.5vw;
 }
 
 .projet{
-    position: absolute;
-    width: 90%;
-    height: 60%;
-    margin: 10% 5%;
-    display: flex;
+    width: 95vw;
+    height:95vh;
+    display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
-    background: radial-gradient(circle, #8d1c657c 4%,rgba(0, 0, 0, 0.521) 56%);
-    box-shadow: 0 0 16px purple;
-    
 }
+.block{
+    width: 430px;
+    height: 20vh;
+    text-align: center;
+    box-shadow: 0 0 6px #000000;
+    cursor: pointer;
+    transition: all 0.75s ;
+    overflow:hidden;
+}
+.block:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 6px rgba(128, 0, 128, 0.575);
+} 
 
+.JO{
+    background-color: #881d54c7;
+
+}
+.AS{
+    background-color: #66143dc7;
+}
+.NE{
+    background-color: #3d0b24c7;
+}
+.FH{
+    background-color: #2e081bc7;
+}
+.JO h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.AS h1{
+    font-family: 'ingrid';
+}
+.NE h1{
+    font-family: 'great';
+}
+.projet h1{
+    color: white;
+    padding-top: 13%;
+    font-size: calc(1vw + 35px);
+}
+.projet p{
+    font-family: 'poppins';
+    color: white;
+}
 .cercle{
-    margin-top: 5%;
-    border-radius: 50%;
-    width: 22%;
-    height: 70%;
+    position: absolute;
+    width: 30%;
+    height: 30%;
     background-image: url('/picture/projet.png');
-    background-size: 250%;
-    background-position: center;
+    background-size: 120%;
     background-repeat: no-repeat;
-    filter: drop-shadow(0 0 16px purple);
-    transition: 4s cubic-bezier(0.035, 0.82, 0.165, 1);
+    background-position: center;
+    margin-left: 32.5%;
+    z-index: 10;
+    transition: all 8s;
+}
+.cercle:hover{
+    transform: rotate(360deg);
+}
+.boussole{
+    margin-left: 7%;
+    margin-top: 0%;
+    height: 200px;
+    width: 250px;
+}
+@media screen and (max-width:1478px) {
+    .cercle{
+        display: none;
+    }
     
 }
-.cercle img{
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(50%, 50%);
-    transform: scale(7);
-    filter: drop-shadow(0 0 16px rgb(255, 255, 255));
-    
-  }
 
 
-  .part{
-      width: 10vw;
-      height: 50vh;
-      border: 2px solid blue;
-      transition: 4s cubic-bezier(0.035, 0.82, 0.165, 1);
-      object-fit: cover;
-  }
-  .ailleurs, .note{
-      margin-top: 9vh;
-  }
-  .jadoo, .fromhere{
-      margin-top: 1vh;
-  }
-  .cercle:active{
-      transform: rotate(360deg);
-  }
-  .photo{
-   
-  }
 

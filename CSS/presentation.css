@@ -1,4 +1,5 @@
-.contener-presentation {
+@import 'ressource.css';
+#contener-presentation {
     background: black;
     height: 100%;
     overflow: hidden;
@@ -46,6 +47,7 @@ width: 450px;
     height: 50vh;
     color: beige;
     font-size: calc(1vw + 10px);
+    font-family: 'poppins';
     text-align: justify;
     box-sizing: border-box;
     text-shadow: 0 0 6px rgb(0, 0, 0);

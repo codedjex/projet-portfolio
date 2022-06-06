@@ -1,11 +1,11 @@
 <header>
     <img class="fondhead" src="../picture/TECHNOLOGY DESKTOP WALLPAPER.png"/>
     <div class="contener-titre">
-        <ul class="lien-titre">
-            <li class="souligne">Projets</li>
-            <li class="souligne">A Propos</li>
-            <li class="souligne">Ce bouton ne sert à rien</li>
-        </ul>
+        <div class="lien-titre">
+            <a href="#contener-projet" class="souligne">Projets</a>
+            <a href="#contener-presentation">A Propos</a>
+            <a class="souligne">Ce bouton va nul part</a>
+        </div>
         <div id="menu" onclick="toggle()">
         <img  class="bouton" src="/picture/parmetre.png"/>
     </div>
