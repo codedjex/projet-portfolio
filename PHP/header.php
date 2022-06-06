@@ -2,11 +2,15 @@
     <img class="fondhead" src="../picture/TECHNOLOGY DESKTOP WALLPAPER.png"/>
     <div class="contener-titre">
         <div class="lien-titre">
+            <button id="neon" onclick="allume()">
+                <i class="fa-solid fa-power-off"></i>
+            </button>
             <a href="#contener-projet" class="souligne">Projets</a>
-            <a href="#contener-presentation">A Propos</a>
+            <a href="#contener-presentation"class="souligne">A Propos</a>
             <a class="souligne">Ce bouton va nul part</a>
+            
         </div>
-        <div id="menu" onclick="toggle()">
+        <div id="menu" onclick="deplois()">
         <img  class="bouton" src="/picture/parmetre.png"/>
     </div>
     </div>
@@ -16,8 +20,8 @@
     <div class="message"></div>
     <div class="contener-central">
             <div class="contener-nom">
-            <div class="prenom">Jérôme</div>
-            <div class="nom">GINOUVEZ</div>
+            <div id="prenom">Jérôme</div>
+            <div id="nom">GINOUVEZ</div>
         </div>
         <div class="contener-cadre">
             <div class="cadre1"></div>

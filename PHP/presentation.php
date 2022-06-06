@@ -12,12 +12,12 @@
             et me permet de donner a mon travail un aspect
             varié et changeant"</p>
         <div class="fa">
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-php"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-bootstrap"></i>
+            <i class="fa-brands fa-css3-alt reveal-0"></i>
+            <i class="fa-brands fa-html5 reveal-1"></i>
+            <i class="fa-brands fa-github reveal-2"></i>
+            <i class="fa-brands fa-php reveal-3"></i>
+            <i class="fa-brands fa-js reveal-4"></i>
+            <i class="fa-brands fa-bootstrap reveal-5"></i>
         </div>
     </article>
 </nav>
