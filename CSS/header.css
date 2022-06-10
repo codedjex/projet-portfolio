@@ -10,8 +10,8 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    width: 100%;
-    height: 99vh;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     box-sizing: content-box;
 }
@@ -24,7 +24,6 @@ header {
     object-fit: cover;
     animation: tourne3 10s infinite forwards;
     transition: all 2s;
-    margin: 0vh 0vw;
     filter: blur(4);
 }
 
@@ -48,30 +47,37 @@ header {
 }
 
 .contener-titre {
-    position:sticky;
-    top: 0px;
-    padding: 7px 0;
+position:sticky;
+top:0;
     width: 100%;
     height: 6vh;
-    background-color: #13252cbd;
+    background-color: #13252cab;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: space-around;
     z-index: 30;
 
 }
 
 .lien-titre {
+    width: 40%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: space-around;
     list-style-type: none;
+
 }
 
 .lien-titre a{
     color: #FF9CB6;
-    font-size: calc(1vw + 15px);
-    padding: 0 1.7vw;
+    font-size: calc(1vw + 17px);
+    font-family: 'Amatic';
+}
+.lien-titre h1{
+    font:calc(1vw + 17px);
+    color: white;
     font-family: 'Amatic';
 }
 
@@ -105,29 +111,28 @@ header {
 }
 .fa-power-off{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: calc(1vw + 17px);
+    height: auto;
+    top:5px;
     right: 0px;
     bottom: 0px;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
 }
 .fa-power-off.allume{
     animation: allumage 2.5s forwards;
 }
 #menu {
-    margin-left: 50%;
     width: 40px;
     height: 40px;
-    /* border: 2px solid rgb(65, 59, 59);
-    background-color: #FF9CB6; */
     border-radius: 50%;
     cursor: pointer;
-    /* animation: pulse 0.75s infinite; */
+    margin-right: 5%;
 }
 .bouton{
     width: 40px;
     animation: pulse 1.5s infinite;
+   
 
 }
 @keyframes pulse {
@@ -288,7 +293,7 @@ header .texte {
     }
 
     #menu {
-        margin-left: 40%;
+        margin-left: 0%;
     }
 
 }
@@ -298,8 +303,8 @@ header .texte {
         top: 100px;
     }
 
-    #menu {
-        margin-left: 20%;
+    .lien-titre {
+        width: 65%;
     }
 
 }
@@ -308,9 +313,11 @@ header .texte {
     .cadre1 {
         top: 120px;
     }
-
-    .menu {
-        margin-left: 2%;
+    .lien-titre {
+        width: 90%;
+    }
+    .fa-power-off{
+        right: 20px;
     }
 
 }
@@ -320,9 +327,9 @@ header .texte {
     width: 30px;
     height: auto;
     border-radius: 20px;
-    position: sticky;
+    position: fixed;
     z-index: 3;
-    bottom: 40px;
+    bottom: 80px;
     left: 10px;
 
 }

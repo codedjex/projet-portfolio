@@ -2,6 +2,7 @@
 #contener-presentation {
     background: black;
     height: 100%;
+    width: 100vw;
     overflow: hidden;
     box-sizing: content-box;
 }
@@ -10,15 +11,21 @@
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100vw;
+}
+canvas{
+    width: 100vw;
+    height: 100vh;
 }
 
 .presentation {
     position: absolute;
-    bottom: 0px;
-    top: 1100px;
+    bottom: 0;
+    top: 14%;
     width: 85%;
     height: 55vh;
     margin-left: 7%;
+    z-index: 30;
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -66,17 +73,96 @@ box-shadow: none;
     }
 
 }
-.presentation img {
-width: 450px;
+  
+.RV {
+    background-color: transparent;
+    width: 450px;
     min-width: 250px;
-    opacity: 0.9;
-    border-radius: 20px;
+    height: 50vh;
+    perspective: 1000px;
     margin: 10px 10px 10px 10px;
+  }
+  .rvint {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  .RV:hover .rvint {
+    transform: rotateY(180deg);
+  }
+  .carterecto,
+  .carteverso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .carterecto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     box-sizing: border-box;
-
+    
+  }
+  .carterecto img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+  }
+ 
+  .carteverso {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#e664db, #9198e5);
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    color: black;
+    padding: 14px;
+  }
+  .carteverso > p {
+      width: 80%;
+      text-align: justify;
+      line-height: 35px;
+      font-size: 20px;
+      color: black;
+  }
+  .carteverso > h1 {
+    width: 100%;
+    border-bottom: 2px dotted;
+    text-align: justify;
+    line-height: 25px;
+    font-size: 45px;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 17px 0;
 }
+span{
+    font-family:'Amatic';
+    font-size: 30px;
+}
+.telecharge{
+    transition: all 0.25s;
+}
+  .contener-bouton{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 40px;
+  }
 
-.presentation p {    
+  .fa-file-arrow-down{
+      font-size: 60px;
+  }
+  .telecharge:hover{
+      transform: scale(1.1);
+  }
+
+
+.epi{    
     margin: 0 0 0 0;
     width:calc(40vw + 15px);
     flex: 0 0 50%;
@@ -138,10 +224,10 @@ width: 450px;
         height: 85vh;
         flex-direction: column;
         flex-wrap: nowrap;
-        top: 900px;
+        top: 0px;
     }
     .presentation img{
-        margin: 10px 0 10px 10%;
+        margin: 10px 0;
         width: 80%;
         height: 60%;
     }
@@ -158,7 +244,24 @@ width: 450px;
 @media screen and (max-width:673px){
         .presentation{
             min-width: 60%;
-            margin-left: 20%;
+            margin-left: 0%;
+        }
+        .RV{
+            width: 100vw;
+            height: 45vh;
+            margin: 0%;
+        }
+        .carterecto img{
+            width: 100%;
+            height: 45vh;
+        }
+        .carteverso{
+            width: 100%;
+            height: 45vh;
+        }
+        .epi{
+            width: 100vw;
+            margin: 0;
         }
 }
 @media screen and (max-width:523px){

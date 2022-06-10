@@ -16,26 +16,26 @@ document.onmousemove = function () {
     console.log("y = " - y);
 };
 function depli1(){
-    var jadoo = document.getElementById("jadoo");
+    var jadoo = document.getElementById("Jadoo");
 	jadoo.classList.toggle("visible");
     var JO = document.getElementById("JO");
     JO.classList.toggle("visible");
 
 } 
-function depli2() {
-    var ailleurs = document.getElementById("ailleurs");
+function depli3() {
+    var ailleurs = document.getElementById("Ailleurs");
 	ailleurs.classList.toggle("visible");
     var AS = document.getElementById("AS");
     AS.classList.toggle("visible");
 }
-function depli3() {
-	var note = document.getElementById("note");
+function depli2() {
+	var note = document.getElementById("Note");
 	note.classList.toggle("visible");
     var NE = document.getElementById("NE");
     NE.classList.toggle("visible");
   }
   function depli4() {
-    var fromhere = document.getElementById("fromhere");
+    var fromhere = document.getElementById("FromHere");
 	fromhere.classList.toggle("visible");
     var FH = document.getElementById("FH");
     FH.classList.toggle("visible");

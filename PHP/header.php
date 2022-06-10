@@ -8,11 +8,14 @@
             <a href="#contener-projet" class="souligne">Projets</a>
             <a href="#contener-presentation"class="souligne">A Propos</a>
             <a class="souligne">Ce bouton va nul part</a>
-            
+            <?php
+if(isset($_COOKIE['cookie_form'])){
+         echo '<h1> votre message a bien était transmi</h1>';   }
+        ?>
         </div>
         <div id="menu" onclick="deplois()">
-        <img  class="bouton" src="/picture/parmetre.png"/>
-    </div>
+            <img  class="bouton" src="/picture/parmetre.png"/>
+        </div>
     </div>
     <?php
     @include 'PHP/competence.php';
@@ -34,10 +37,10 @@
     </button>
         <dialog id="dialog">
             <button id="bclose">X</button>
-            <form id="grid" method="post" action="">
+            <form id="grid" method="post" action="PHP/formulaire-demande.php">
                   <div class="champ part1">
                     <label for="nom">Nom:</label>
-                    <input type="text" id="nom" name="nom">
+                    <input type="text" id="nom" name="nom" require >
                   </div>
                   <div class="champ part2">
                     <label for="prenom">Prénom :</label>
@@ -49,7 +52,7 @@
                    </div>
                    <div class="champ part4">
                     <label for="mail">Votre demande:</label>
-                    <input type="text" id="text" name="mail" placeholder="" textarea="">
+                    <input type="text" id="Message" name="Message" placeholder="votre demande ici" textarea="">
                    </div>
                   <input id="bouton" type="submit" value="Envoyer">
               </form>

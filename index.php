@@ -7,7 +7,6 @@
     <script src="java/header.js" async></script>
     <script src="java/projets.js" async></script>
     <script src="java/competence.js" async></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
     <script src="https://kit.fontawesome.com/29ac4cabe1.js"></script>
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/presentation.css">
@@ -18,8 +17,9 @@
 
     <title>Document</title>
 </head>
-<body class="scroller">
-        <section>
+<body>
+        <main>
+        <section id="section-1">
         <?php
                 include 'PHP/header.php';
                 ?>
@@ -29,7 +29,7 @@
                 include 'PHP/presentation.php';
                 ?>
         </section>
-        <section>
+        <section id="sprojet">
         <?php   
                 include 'PHP/projets.php';
                 ?>
@@ -39,6 +39,7 @@
                 include 'PHP/footer.php';
                 ?>
         </section>
+</main>
     
 </body>
 </html>

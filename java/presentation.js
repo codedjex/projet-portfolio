@@ -4,11 +4,8 @@ const context = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
 const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-const nums = '0123456789';
 
-const alphabet = katakana + latin + nums;
 
 const fontSize = 30;
 const columns = canvas.width/fontSize;
@@ -26,9 +23,11 @@ const draw = () => {
 	context.fillStyle = '#DE38A4';
 	context.font = fontSize + 'px monospace';
 
+
+
 	for(let i = 0; i < rainDrops.length; i++)
 	{
-		const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+		const text = latin.charAt(Math.floor(Math.random() * latin.length));
 		context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
 		
 		if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975){
