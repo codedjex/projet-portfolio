@@ -80,7 +80,7 @@ box-shadow: none;
     min-width: 250px;
     height: 50vh;
     perspective: 1000px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 0px 10px 10px;
   }
   .rvint {
     position: relative;
@@ -133,29 +133,30 @@ box-shadow: none;
     width: 100%;
     border-bottom: 2px dotted;
     text-align: justify;
-    line-height: 25px;
-    font-size: 45px;
+    line-height: 35px;
+    font-size: calc((2vw + 15px));
     color: black;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: calc(1vh + 10px);
     padding: 17px 0;
 }
 span{
     font-family:'Amatic';
-    font-size: 30px;
+    font-size: calc(1vw + 17px);
 }
 .telecharge{
+    
     transition: all 0.25s;
 }
   .contener-bouton{
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      margin-top: 40px;
+      margin-top:  calc(1vh + 10px);
   }
 
   .fa-file-arrow-down{
-      font-size: 60px;
+      font-size: calc(3vw + 15px);;
   }
   .telecharge:hover{
       transform: scale(1.1);
@@ -163,11 +164,11 @@ span{
 
 
 .epi{    
-    margin: 0 0 0 0;
-    width:calc(40vw + 15px);
-    flex: 0 0 50%;
+    margin: 0 10px 0 10px;
+    width:calc(37vw + 15px);
+    flex: 0 0 35%;
     height: 50vh;
-    color: beige;
+    color: rgb(255, 255, 255);
     font-size: calc(1vw + 10px);
     font-family: 'poppins';
     text-align: justify;
@@ -220,22 +221,23 @@ span{
 @media screen and (max-width:1090px){
     .presentation{
         width: 65%;
-        margin-left: 17%;
+        margin: 5% 0 0 20%;
         height: 85vh;
         flex-direction: column;
         flex-wrap: nowrap;
+        justify-content:space-around;
+        align-items: center;
+
         top: 0px;
     }
-    .presentation img{
-        margin: 10px 0;
-        width: 80%;
-        height: 60%;
+    .RV{
+        width: 420px;
+        height: 400px;
     }
-    .presentation p{
-       flex: 0 0 20%;
-       width: 80%;
-       margin-left: 10%;
+    .epi{
+      width: 90%;  
     }
+    
     .fa{
         width: 90%;
         margin-left: 5%;
@@ -243,33 +245,39 @@ span{
 }
 @media screen and (max-width:673px){
         .presentation{
-            min-width: 60%;
-            margin-left: 0%;
+            min-width: 90%;
+            margin-left: 5%;
+           
         }
-        .RV{
-            width: 100vw;
-            height: 45vh;
-            margin: 0%;
-        }
+        
         .carterecto img{
             width: 100%;
-            height: 45vh;
+            height: 100%;
+            
         }
         .carteverso{
             width: 100%;
-            height: 45vh;
+            height:100%;
+            padding-left: 0px;
         }
         .epi{
-            width: 100vw;
+            width: 90%;
             margin: 0;
+            font-size: 20px;
+            text-align: center;
         }
 }
-@media screen and (max-width:523px){
+@media screen and (max-width:559px){
     .presentation{
         min-width: 100%;
         margin-left: 0;
         border-left: 0ch;
         border-right: 0;
         border-radius: 0;
+    }
+    .RV{
+        width: 87%;
+        height: 50%;
+       
     }
 }

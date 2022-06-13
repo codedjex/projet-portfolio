@@ -57,3 +57,5 @@ function depli2() {
     var dedans = document.getElementById("dedans");
     dedans.classList.toggle("visible");
   }
+
+ 

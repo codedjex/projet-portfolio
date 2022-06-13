@@ -4,7 +4,7 @@ const context = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ<>/{}:#';
 
 
 const fontSize = 30;
@@ -39,7 +39,7 @@ const draw = () => {
 
 setInterval(draw, 60)
 
-const ratio = .3
+const ratio = .1
 const options = {
   root: null,
   rootMargin: '0px',

@@ -147,6 +147,11 @@ top:0;
     height: auto;
     margin: 20vh 10%;
 }
+#nom a {
+    text-decoration: none;
+    cursor:default;
+
+}
 
 .contener-cadre {
     position: relative;
@@ -353,7 +358,7 @@ header .texte {
     width: min(600px, 100%);
     height: auto;
     border: 2px solid;
-    background-color: #ffffff;
+    background-color: #000000;
     z-index: 4;
     border-radius: 10px;
     padding: 10px;
@@ -362,25 +367,35 @@ header .texte {
 #bclose {
     text-transform: uppercase;
     margin: 10px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .champ{
     display: inline-block;
     margin-bottom: 10px;
     font-family: 'Amatic'; 
     font-size: 1.1em; 
-    color: black; 
+    color: rgb(255, 255, 255); 
     font-weight: 500;
 }
 #grid input{
     border-bottom: 1px solid;
     margin: 7px 5px 0 10px;
+    text-decoration: none;
+    background-color: #000000;
+    font-family: 'Amatic';
+
 }
 .part3{
     display: block;
 }
 #bouton{
+    border: 1.5px solid white;
+    color: #ffffff;
     display: block;
-    border: 2px solid;
-    padding: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: transform 0.25s;
+}
+#bouton:hover{
+    transform: scale(1.02);
 }

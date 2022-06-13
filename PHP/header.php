@@ -24,7 +24,7 @@ if(isset($_COOKIE['cookie_form'])){
     <div class="contener-central">
             <div class="contener-nom">
             <div id="prenom">Jérôme</div>
-            <div id="nom">GINOUVEZ</div>
+            <div id="nom">GIN<a href="PHP/back-office.php">O</a>UVEZ</div>
         </div>
         <div class="contener-cadre">
             <div class="cadre1"></div>
