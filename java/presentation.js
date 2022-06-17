@@ -5,7 +5,9 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ<>/{}:#';
-
+var nb_car = latin.length; 
+var tableau = latin.split("");
+console.log(tableau)
 
 const fontSize = 30;
 const columns = canvas.width/fontSize;
@@ -27,7 +29,7 @@ const draw = () => {
 
 	for(let i = 0; i < rainDrops.length; i++)
 	{
-		const text = latin.charAt(Math.floor(Math.random() * latin.length));
+		const text = latin.charAt(Math.floor(Math.random() * tableau.length));
 		context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
 		
 		if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975){

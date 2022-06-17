@@ -28,9 +28,7 @@ $donnees_block = $BDD->prepare("SELECT block.ID_projet, projets.Photo
                                       
 $donnees_block->execute();
 $block1 = $donnees_block->fetchAll();
- echo '<pre>';
-                                       print_r($block1);
-                                       echo '</pre>';
+
 
 ?>
 

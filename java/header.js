@@ -30,6 +30,14 @@ function allume(){
     off.classList.toggle("allume");
     var presentation = document.querySelector(".presentation");
     presentation.classList.toggle("allume");
+    var presentation = document.querySelector(".block1");
+    presentation.classList.toggle("allume");
+    var presentation = document.querySelector(".block2");
+    presentation.classList.toggle("allume");
+    var presentation = document.querySelector(".block3");
+    presentation.classList.toggle("allume");
+    var presentation = document.querySelector(".block4");
+    presentation.classList.toggle("allume");
 
 } 
 

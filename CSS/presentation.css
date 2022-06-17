@@ -280,4 +280,11 @@ span{
         height: 50%;
        
     }
+    .carteverso > h1 {
+        padding: 10px 0;
+        margin-bottom: 5px;
+    }
+    .carteverso > p{
+        font-size: 15px;
+    }
 }

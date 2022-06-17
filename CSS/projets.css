@@ -10,9 +10,9 @@
     position: absolute;
   width: 98vw;
   height: 50px;
-  background-color: #DE38A4;
+  background-color: #f19fd5;
   transform: translateX(-102vw);
-  transition-duration: 2s;
+  transition-duration: 1s;
   z-index: 20;
   visibility: hidden;
   
@@ -25,8 +25,8 @@
   width: 98vw;
   height: 50px;
   background-color: rgb(255, 255, 255);
-  transition-duration: 2s;
-  transition-delay: 2s;
+  transition-duration: 1s;
+  transition-delay: 1.5s;
   overflow: hidden;
   visibility: hidden;
 }
@@ -34,82 +34,7 @@
   height: 90vh;
   visibility: visible;
 }
-.presentation-projet{
-width: 100%;
-height: 100%;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-around;
-}
-.texte-projet{
-width: 100%;
-height: 10%;
-padding-left: 10%;
-font-family: 'Times New Roman', Times, serif;
-font-size: calc(6vw + 15px);
-}
-.contener-photo{
-    width: 100%;
-height: 90%;
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: space-around;
-align-items: center;
-justify-items: center;
 
-}
-.contener-photo-principal{
-width: 45%;
-height: 90%;
-object-fit: contain;
-align-items: center;
-justify-items: center;
-
-}
-.photo-principal{
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    filter:drop-shadow( 0 0 6px black);
-    
-   
-}
-.photos-secondaire{
-    width: 45vw;
-    height: 90%;
- 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.photo{
-    width: 40%;
-    min-width: 150px;
-    height: 45%;
-    min-height: 150px;
-    border-radius: 5px;
-    box-shadow: 0 0 6px black;
-
-}
-.lien-projet{
-    width: 45vw;
-    height: auto;
-}
-@media screen and (max-width:1209px) {
-    .contener-photo-principal{
-        display: none;
-    }
-    .photos-secondaire{
-        width: 100%;
-    }
-    
-}
 .projet{
     width: 95vw;
     height:95vh;
@@ -121,7 +46,7 @@ justify-items: center;
 }
 .block{
     width: 430px;
-    height: auto;
+    height: 20vh;
     padding-bottom: 7vh;
     text-align: center;
     box-shadow: 0 0 6px #000000;
@@ -129,8 +54,19 @@ justify-items: center;
     transition: all 0.75s ;
     overflow:hidden;
 }
-
-
+    .block.visible{
+    height: auto;
+}
+.depli{
+    opacity: 0;
+    transition: all 0.5s;
+}
+.depli.visible{
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    padding: 0 1%;
+}
 
 .block:hover{
     transform: scale(1.05);
@@ -150,108 +86,55 @@ justify-items: center;
 .block:nth-child(4){
     background-color: #2e081bc7;
 }
-.JO h1{
+.block:nth-child(1)  h1{
     font-family: 'Times New Roman', Times, serif;
 }
-.AS h1{
+.block:nth-child(3) h1{
     font-family: 'ingrid';
 }
-.NE h1{
+.block:nth-child(2) h1{
     font-family: 'great';
 }
-#NE{
-    width: 430px;
-    height: 20vh;
-    text-align: center;
-    box-shadow: 0 0 6px #000000;
-    cursor: pointer;
-    transition: all 0.75s ;
-    overflow:hidden;
-    
-    
-    }
-    #NE.visible{
-    height: auto;
-    }
-#Note{
-    opacity: 0;
-    transition: all 0.5s;
+.block.allume{
+    animation: allumage2 2.5s forwards;
+
 }
-#Note.visible{
-    opacity: 1;
-    width: 100%;
-    text-align: center;
-    padding: 0 1%;
-}
-#JO{
-    width: 430px;
-    height: 20vh;
-    text-align: center;
-    box-shadow: 0 0 6px #000000;
-    cursor: pointer;
-    transition: all 0.75s ;
-    overflow:hidden;
+@keyframes allumage2{
+    0%{
+        text-shadow: 0 0 10px rgb(255, 43, 220),
+    0 0 20px rgb(255, 43, 220);
     
     }
-    #JO.visible{
-    height: auto;
+    10%{
+text-shadow: none;
     }
-#Jadoo{
-    opacity: 0;
-    transition: all 0.5s;
-}
-#Jadoo.visible{
-   opacity: 1;
-    width: 100%;
-    text-align: center;
-    padding: 0 1%;
-}
-#AS{
-    width: 430px;
-    height: 20vh;
-    text-align: center;
-    box-shadow: 0 0 6px #000000;
-    cursor: pointer;
-    transition: all 0.75s ;
-    overflow:hidden;
+    20%{
+        text-shadow: 0 0 10px rgb(255, 43, 220),
+    0 0 20px rgb(255, 43, 220),0 0 40px rgb(255, 43, 220);
     
     }
-    #AS.visible{
-    height: auto;
+    30%{
+text-shadow: none;
     }
-#Ailleurs{
-    opacity: 0;
-    transition: all 0.5s;
-}
-#Ailleurs.visible{
-    opacity: 1;
-    width: 100%;
-    text-align: center;
-    padding: 0 1%;
-}
-#FH{
-    width: 430px;
-    height: 20vh;
-    text-align: center;
-    box-shadow: 0 0 6px #000000;
-    cursor: pointer;
-    transition: all 0.75s ;
-    overflow:hidden;
+    50%{
+        text-shadow: 0 0 10px rgb(255, 43, 220),
+    0 0 20px rgb(255, 43, 220), 0 0 80px rgb(255, 43, 220);
     
     }
-    #FH.visible{
-    height: auto;
+    60%{
+        text-shadow: none;
+            }
+    100%{
+        text-shadow: 0 0 10px rgb(255, 43, 220),
+        0 0 20px rgb(255, 43, 220),
+        0 0 40px rgb(255, 43, 220),
+        0 0 80px rgb(255, 43, 220),
+        0 0 120px rgb(255, 43, 220),
+        0 0 140px rgb(255, 43, 220);;
     }
-#FromHere{
-    opacity: 0;
-    transition: all 0.5s;
+
 }
-#FromHere.visible{
-    opacity: 1;
-    width: 100%;
-    text-align: center;
-    padding: 0 1%;
-}
+
 .projet h1{
     color: white;
     padding-top: 13%;
@@ -278,7 +161,7 @@ justify-items: center;
     transition: all 8s;
 }
 .cercle:hover{
-    transform: rotate(360deg);
+    transform: rotate(36000deg);
 }
 .boussole{
     margin-left: 7%;
